@@ -3,7 +3,7 @@ package cpcs371_project;
 import java.net.*;
 import java.io.*;
 
-public class Five_client {
+public class Group5_client {
 
     private Socket socket;
     private DataInputStream userInput;
@@ -12,7 +12,7 @@ public class Five_client {
     private String address;
     private int port;
 
-    public Five_client(String address, int port) {
+    public Group5_client(String address, int port) {
         try {
             this.address = address;
             this.port = port;
@@ -120,7 +120,7 @@ public class Five_client {
     }
 
     public static void main(String args[]) {
-        Five_client client = new Five_client("127.0.0.1", 5000);
+        Group5_client client = new Group5_client("127.0.0.1", 5000);
     }
 
 }

@@ -3,7 +3,7 @@ package cpcs371_project;
 import java.net.*;
 import java.io.*;
 
-public class Five_server {
+public class Group5_server {
 
     private Socket socket;
     private ServerSocket server;
@@ -25,7 +25,7 @@ public class Five_server {
         System.out.println("A client has connected");
     }
 
-    public Five_server(int port) {
+    public Group5_server(int port) {
         try {
             this.port = port;
             initServer();
@@ -83,6 +83,6 @@ public class Five_server {
     }
 
     public static void main(String args[]) {
-        Five_server server = new Five_server(5000);
+        Group5_server server = new Group5_server(5000);
     }
 }
